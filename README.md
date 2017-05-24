@@ -15,6 +15,8 @@
 ### Esperamos
 
 * Faça um visual bacana, sendo fiel ao layout;
+* Ao clicar em encontre-me, aproximar o mapa da sua localização;
+* Ao carregar o mapa exibir marcadores nas localizações existentes no arquivo places.json;
 * Desenvolva um HTML semântico;
 * Utilize o grid do Bootstrap, mas se atente aos breakpoints necessários no layout, independente do grid;
 * Utilize um pré-processador CSS; preferencialmente SASS;
