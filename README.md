@@ -1,4 +1,4 @@
-[BRZ Digital](http://assets.brzdigital.com.br/brzdigital.svg)](http://brzdigital.com.br)
+![BRZ Digital](http://assets.brzdigital.com.br/brzdigital.svg)
 
 # Teste para vaga de Front-end
 
