@@ -34,9 +34,9 @@
 
 ### Material
 
-* [Desktop](http://invision);
-* [Tablet](http://invision);
-* [Mobile](http://invision).
+* [Desktop](http://invision)
+* [Tablet](http://invision)
+* [Mobile](http://invision)
 
 ### Links úteis
 
