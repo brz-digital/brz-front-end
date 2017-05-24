@@ -1,0 +1,51 @@
+[BRZ Digital](http://assets.brzdigital.com.br/brzdigital.svg)](http://brzdigital.com.br)
+
+# Teste para vaga de Front-end
+
+> Prova para testar seus conhecimentos com <b>HTML, CSS e JavaScript</b>.<br>
+> O tempo médio para implementação é de <b>4 horas</b>.
+
+## Instruções
+
+1. Faça um fork deste repositório;
+2. Estude os requisitos;
+3. Implemente o HTML/CSS/JS das telas com base no layout disponível;
+4. Finalizado, submeta um pull request e aguarde seu feedback.
+
+### Esperamos
+
+* Faça um visual bacana, sendo fiel ao layout;
+* Desenvolva um HTML semântico;
+* Utilize o grid do Bootstrap, mas se atente aos breakpoints necessários no layout, independente do grid;
+* Utilize um pré-processador CSS; preferencialmente SASS;
+* Escreva o CSS utilizando alguma metodoligia de escrita, RSCSS, Suit CSS, BEM, etc;
+* Minifique os seus assets;
+* Separe por diretórios <b>fonts</b>, <b>css</b>, <b>js</b> e <b>images</b>;
+* Dê suporte a Chrome, Safari, Firefox e IE10+;
+* Envie também os arquivos não minificados;
+* Utilize um task runner.
+
+### Ficaremos felizes se...
+
+* Utilizar nosso template padrão para desenvolvimento, [BRZ Boilerplate](https://github.com/brz-digital/brz-boilerplate);
+* Gerar os ícones do projeto como um pacote de fonte, indicamos o fontastic.me para esta ação;
+* Otimizar para Retina;
+* UX/UI.
+
+### Material
+
+* [Desktop](http://invision);
+* [Tablet](http://invision);
+* [Mobile](http://invision).
+
+### Links úteis
+
+* [Bootstrap](http://getbootstrap.com)
+* [Fontastic.me](https://fontastic.me)
+* [Swiper.js](http://idangero.us/swiper)
+
+## Envio
+
+Para iniciar o teste, faça um fork deste repositório, crie uma branch com o seu nome e depois envie-nos o pull request.
+
+**Boa sorte!**
