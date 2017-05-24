@@ -31,8 +31,7 @@
 
 * Utilizar nosso template padrão para desenvolvimento, [BRZ Boilerplate](https://github.com/brz-digital/brz-boilerplate);
 * Gerar os ícones do projeto como um pacote de fonte, indicamos o fontastic.me para esta ação;
-* Otimizar para Retina;
-* UX/UI.
+* Otimizar para Retina.
 
 ### Material
 
