@@ -1,9 +1,9 @@
-<img src="http://assets.brzdigital.com.br/brzdigital.svg" alt="BRZ Digital" width="100">
+<img src="http://assets.brzdigital.com.br/brzdigital.svg" alt="BRZ Digital" width="80">
 
 # **Teste para vaga de Front-end**
 
 > Prova para testar seus conhecimentos com **HTML**, **CSS** e **JavaScript**.<br>
-> O tempo médio para implementação é de **4 horas**.
+> O tempo médio para implementação é de **6 horas**.
 
 ## Instruções
 
