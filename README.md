@@ -3,7 +3,7 @@
 # **Teste para vaga de Front-end**
 
 > Prova para testar seus conhecimentos com **HTML**, **CSS** e **JavaScript**.<br>
-> O tempo médio para implementação é de **6 horas**.
+> O tempo médio para implementação é de **8 horas**.
 
 ## Instruções
 
@@ -23,7 +23,8 @@
 * Separe por diretórios <b>fonts</b>, <b>css</b>, <b>js</b> e <b>images</b>;
 * Dê suporte a Chrome, Safari, Firefox e IE10+;
 * Envie também os arquivos não minificados;
-* Utilize um task runner.
+* Utilize um task runner;
+* Não duplicar código html de componentes para se adaptar em outras versões.
 
 ### Ficaremos felizes se...
 
@@ -34,9 +35,8 @@
 
 ### Material
 
-* [Desktop](http://invision)
-* [Tablet](http://invision)
-* [Mobile](http://invision)
+* [Desktop](https://invis.io/9ABV8CGV4)
+* [Mobile](https://invis.io/ECBV8B92H)
 
 ### Links úteis
 
