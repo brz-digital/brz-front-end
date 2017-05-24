@@ -1,6 +1,6 @@
-![BRZ Digital](http://assets.brzdigital.com.br/brzdigital.svg =100x)
+<img src="http://assets.brzdigital.com.br/brzdigital.svg" alt="BRZ Digital" width="100">
 
-# Teste para vaga de Front-end
+# **Teste para vaga de Front-end**
 
 > Prova para testar seus conhecimentos com <b>HTML, CSS e JavaScript</b>.<br>
 > O tempo médio para implementação é de <b>4 horas</b>.
