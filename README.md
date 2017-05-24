@@ -2,8 +2,8 @@
 
 # **Teste para vaga de Front-end**
 
-> Prova para testar seus conhecimentos com <b>HTML, CSS e JavaScript</b>.<br>
-> O tempo médio para implementação é de <b>4 horas</b>.
+> Prova para testar seus conhecimentos com **HTML**, **CSS** e **JavaScript**.<br>
+> O tempo médio para implementação é de **4 horas**.
 
 ## Instruções
 
