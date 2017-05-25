@@ -25,6 +25,10 @@ body {
     .nav-icons > li > a > i:hover {
       color: #f5becf; }
 
+#map {
+  height: 400px;
+  width: 100%; }
+
 .nav > li {
   display: inline-block; }
 
@@ -41,6 +45,7 @@ body {
 
 .showcase {
   margin-top: 40px;
+  background-position: 70% 100%;
   background-image: url(../../images/bg-search.jpg);
   background-size: cover;
   height: auto;
@@ -50,7 +55,7 @@ body {
   .showcase .search-bar-container {
     padding: 170px 0; }
     .showcase .search-bar-container .search-input {
-      background-image: url(../images/icons/search2.svg);
+      background-image: url("../../images/icons/search2.svg");
       background-repeat: no-repeat;
       background-position: 95% 50%;
       background-size: 40px;

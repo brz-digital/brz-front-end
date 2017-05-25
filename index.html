@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>happy</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="images/favicon.svg">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://file.myfontastic.com/BC9ZdCs7m7UKHwVGdEkYZU/icons.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/min/main.min.css">
   </head>
 
   <body>
@@ -48,9 +48,15 @@
         <input class="search-input" type="text" placeholder="buscar...">
       </div>
     </section>
+
+    <section id="map"></section>
   </body>
 
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX4xYzaIAu5BDIc8eerc4qUz00XzOQZ_c&callback=initMap"
+    async defer>
+  </script>
+  <script type="text/javascript" src="places.json"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/min/main.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>

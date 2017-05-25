@@ -49,6 +49,11 @@ body {
   }
 }
 
+#map {
+  height: 400px;
+  width: 100%;
+}
+
 .nav>li {
   display: inline-block;
 }
@@ -70,7 +75,7 @@ body {
 
 .showcase {
   margin-top: 40px;
-  // background-position: center;
+  background-position: 70% 100%;
   // background-repeat: no-repeat;
   background-image: url(../../images/bg-search.jpg);
   background-size: cover;
@@ -85,7 +90,7 @@ body {
       &:focus {
         outline: none;
       }
-      background-image: url(../images/icons/search2.svg);
+      background-image: url('../../images/icons/search2.svg');
       background-repeat: no-repeat;
       background-position: 95% 50%;
       background-size: 40px;
