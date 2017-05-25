@@ -14,8 +14,34 @@ $primary-color: #E1396C;
 //     src: url("../../fonts/nexa/Nexa Bold.otf") format("opentype");
 // }
 
+@mixin no-outline {
+  &:hover, &:focus, &:active {
+    outline: none;
+  }
+}
+
+.images-container {
+  margin: 50px 0 50px 0;
+}
+
 body {
   font-family: 'Nexa Light', serif;
+}
+
+#find-me-btn {
+  font-weight: 800;
+  color: #fff;
+  background-color: $primary-color;
+  border: 0;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 17px;
+
+  @include no-outline;
+
+  &:hover {
+    background-color: darken($primary-color, 15%);
+  }
 }
 
 .navbar-brand {
@@ -64,11 +90,15 @@ body {
   a {
     color: #fff;
   }
-  #navbar>ul>li>a {
-    text-transform: uppercase;
-    &:hover {
+  #navbar>ul>li {
+    &.active {
       border-bottom: 2px solid yellow;
-      background-color: $primary-color;
+    }
+    >a {
+      text-transform: uppercase;
+      &:hover {
+        background-color: darken($primary-color, 15%);
+      }
     }
   }
 }
@@ -87,10 +117,8 @@ body {
   .search-bar-container {
     padding: 170px 0;
     .search-input {
-      &:focus {
-        outline: none;
-      }
-      background-image: url('../../images/icons/search2.svg');
+      @include no-outline;
+      background-image: url('../../images/icons/search-pink.svg');
       background-repeat: no-repeat;
       background-position: 95% 50%;
       background-size: 40px;

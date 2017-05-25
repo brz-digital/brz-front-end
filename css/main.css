@@ -2,8 +2,24 @@
   font-family: 'Nexa Light';
   src: url("../../fonts/nexa/Nexa Light.otf") format("opentype"); }
 
+.images-container {
+  margin: 50px 0 50px 0; }
+
 body {
   font-family: 'Nexa Light', serif; }
+
+#find-me-btn {
+  font-weight: 800;
+  color: #fff;
+  background-color: #E1396C;
+  border: 0;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 17px; }
+  #find-me-btn:hover, #find-me-btn:focus, #find-me-btn:active {
+    outline: none; }
+  #find-me-btn:hover {
+    background-color: #b21b49; }
 
 .navbar-brand {
   height: auto; }
@@ -37,11 +53,12 @@ body {
   border: 0; }
   .navbar-custom a {
     color: #fff; }
+  .navbar-custom #navbar > ul > li.active {
+    border-bottom: 2px solid yellow; }
   .navbar-custom #navbar > ul > li > a {
     text-transform: uppercase; }
     .navbar-custom #navbar > ul > li > a:hover {
-      border-bottom: 2px solid yellow;
-      background-color: #E1396C; }
+      background-color: #b21b49; }
 
 .showcase {
   margin-top: 40px;
@@ -55,7 +72,7 @@ body {
   .showcase .search-bar-container {
     padding: 170px 0; }
     .showcase .search-bar-container .search-input {
-      background-image: url("../../images/icons/search2.svg");
+      background-image: url("../../images/icons/search-pink.svg");
       background-repeat: no-repeat;
       background-position: 95% 50%;
       background-size: 40px;
@@ -64,7 +81,7 @@ body {
       color: #E1396C;
       border: 0;
       font-size: 30px; }
-      .showcase .search-bar-container .search-input:focus {
+      .showcase .search-bar-container .search-input:hover, .showcase .search-bar-container .search-input:focus, .showcase .search-bar-container .search-input:active {
         outline: none; }
       .showcase .search-bar-container .search-input::-webkit-input-placeholder {
         /* WebKit, Blink, Edge */
