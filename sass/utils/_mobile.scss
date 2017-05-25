@@ -1,0 +1,27 @@
+@media screen and (max-width: 767px) {
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  @include set-search-bar-size(20px, 30px);
+  #places-with-col {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  @include set-search-bar-size(25px, 40px);
+}
+
+@media screen and (min-width: 767px) {
+  @include set-search-bar-size(30px, 40px);
+
+  #places-with-col {
+    display: block;
+  }
+  #places-with-swiper {
+    display: none;
+  }
+}

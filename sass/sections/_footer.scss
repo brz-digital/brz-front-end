@@ -1,0 +1,13 @@
+footer {
+  padding: 60px;
+  ul>li {
+    display: inline-block;
+    a {
+      color: #333;
+    }
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+    font-size: 15px;
+  }
+}

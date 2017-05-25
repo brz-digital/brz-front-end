@@ -1,0 +1,14 @@
+html, body {
+  position: relative;
+  height: 100%;
+  font-family: 'Nexa Light', serif;
+}
+
+@font-face {
+    font-family: 'Nexa Light';
+    src: url("../../fonts/nexa/Nexa Light.otf") format("opentype");
+}
+
+.all-caps {
+  text-transform: uppercase;
+}

@@ -1,4 +1,3 @@
-// TODO: put the button inside the map
 // TODO: comment the code
 
 // inicializing Swiper
@@ -14,17 +13,22 @@ $(document).ready(function() {
 
 
 function initMap() {
+  // escolhi Brasilia como centro porque ela fica mais no centro do Brasil
   let brasilia = {lat: -15.7801, lng: -47.9292};
+  // criei o mapa na div map
   let map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
     center: brasilia
   });
+
   $.getJSON('places.json', (data) => {
     let allPlaces = [];
     $.each(data, function(key, val) {
+      // adiciono todas places que estão no places.json no array allPlaces
       allPlaces.push(val.place[0]);
     })
 
+    // faço uma iteração no array e para cada elemento eu crio um novo Marker com as lat e lng obtidos
     allPlaces.forEach((element) => {
       new google.maps.Marker({
         position: {lat: element.lat, lng: element.lng},
@@ -34,6 +38,8 @@ function initMap() {
     });
   });
 
+  /* função para configurar o botão de 'encontre-me', como eu não sabia como criar um elemento "acima" do Google Maps
+  eu tive que usar esse código que eu encontrei na documentação do Google Maps. */
   function createFindMeButton(controlDiv, map) {
 
     // Set CSS for the control border.
@@ -57,10 +63,10 @@ function initMap() {
     controlText.innerHTML = '<img src="./images/icons/marker-white.png" width="30" alt="marker"><span style="margin-left: 4px;">encontre-me</span>';
     controlUI.appendChild(controlText);
 
-    // Setup the click event listeners: simply set the map to Chicago.
+    // Setup the click event listener, in this is case is to find my location.
     controlUI.addEventListener('click', function() {
       if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(success);
+        navigator.geolocation.getCurrentPosition(findMyPosition);
       } else {
         alert("Geolocation is not supported by this browser.");
       }
@@ -68,14 +74,14 @@ function initMap() {
 
   }
 
-
+  // essas funções são responsáveis por criar o botão, também tirados da documentação
   let centerControlDiv = document.createElement('div');
   let centerControl = new createFindMeButton(centerControlDiv, map);
-
   centerControlDiv.index = 1;
   map.controls[google.maps.ControlPosition.TOP_CENTER].push(centerControlDiv);
 
-  function success(position) {
+  // função que encontra minha localização, adiciona a bolinha azul, centraliza o mapa e dá um zoom na posição.
+  function findMyPosition(position) {
     let latitude  = position.coords.latitude;
     let longitude = position.coords.longitude;
 

@@ -1,0 +1,16 @@
+@mixin set-search-bar-size($font-size, $icon-size) {
+  .showcase {
+    .search-bar-container {
+      .search-input {
+        font-size: $font-size;
+        background-size: $icon-size;
+      }
+    }
+  }
+}
+
+@mixin no-outline {
+  &:hover, &:focus, &:active {
+    outline: none;
+  }
+}
