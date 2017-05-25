@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Nexa Light';
+  src: url("../../fonts/nexa/Nexa Light.otf") format("opentype"); }
+
+body {
+  font-family: 'Nexa Light', serif; }
+
+.navbar-brand {
+  height: auto; }
+
+.nav-itens {
+  margin-top: 12px; }
+
+.navbar-toggle {
+  padding: 14px 0; }
+  .navbar-toggle .icon-bar {
+    background-color: #fff; }
+
+.nav-icons {
+  margin-top: 8px; }
+  .nav-icons > li > a:hover, .nav-icons > li > a:focus, .nav-icons > li > a:active {
+    background-color: transparent; }
+  .nav-icons > li > a > i {
+    font-size: 24px; }
+    .nav-icons > li > a > i:hover {
+      color: #f5becf; }
+
+.nav > li {
+  display: inline-block; }
+
+.navbar-custom {
+  background-color: #E1396C;
+  border: 0; }
+  .navbar-custom a {
+    color: #fff; }
+  .navbar-custom #navbar > ul > li > a {
+    text-transform: uppercase; }
+    .navbar-custom #navbar > ul > li > a:hover {
+      border-bottom: 2px solid yellow;
+      background-color: #E1396C; }
+
+.showcase {
+  margin-top: 40px;
+  background-image: url(../../images/bg-search.jpg);
+  background-size: cover;
+  height: auto;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative; }
+  .showcase .search-bar-container {
+    padding: 170px 0; }
+    .showcase .search-bar-container .search-input {
+      background-image: url(../images/icons/search2.svg);
+      background-repeat: no-repeat;
+      background-position: 95% 50%;
+      background-size: 40px;
+      border-radius: 40px;
+      padding: 10px 20px;
+      color: #E1396C;
+      border: 0;
+      font-size: 30px; }
+      .showcase .search-bar-container .search-input:focus {
+        outline: none; }
+      .showcase .search-bar-container .search-input::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: #E1396C; }
+      .showcase .search-bar-container .search-input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #E1396C;
+        opacity: 1; }
+      .showcase .search-bar-container .search-input::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #E1396C;
+        opacity: 1; }
+      .showcase .search-bar-container .search-input:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #E1396C; }
+      .showcase .search-bar-container .search-input::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #E1396C; }

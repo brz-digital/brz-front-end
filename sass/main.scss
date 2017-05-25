@@ -1,0 +1,116 @@
+// TODO: make search-bar responsive
+// TODO: make components for this
+// TODO: make the image responsive
+
+$primary-color: #E1396C;
+
+@font-face {
+    font-family: 'Nexa Light';
+    src: url("../../fonts/nexa/Nexa Light.otf") format("opentype");
+}
+
+// @font-face {
+//     font-family: 'Nexa Bold';
+//     src: url("../../fonts/nexa/Nexa Bold.otf") format("opentype");
+// }
+
+body {
+  font-family: 'Nexa Light', serif;
+}
+
+.navbar-brand {
+  height: auto;
+}
+
+.nav-itens {
+  margin-top: 12px;
+}
+
+.navbar-toggle {
+  padding: 14px 0;
+
+  .icon-bar {
+    background-color: #fff;
+  }
+}
+
+.nav-icons {
+  margin-top: 8px;
+  >li>a {
+    &:hover, &:focus, &:active {
+      background-color: transparent;
+    }
+    >i {
+      font-size: 24px;
+      &:hover {
+        color: lighten($primary-color, 30%);
+      }
+    }
+  }
+}
+
+.nav>li {
+  display: inline-block;
+}
+
+.navbar-custom {
+  background-color: $primary-color;
+  border: 0;
+  a {
+    color: #fff;
+  }
+  #navbar>ul>li>a {
+    text-transform: uppercase;
+    &:hover {
+      border-bottom: 2px solid yellow;
+      background-color: $primary-color;
+    }
+  }
+}
+
+.showcase {
+  margin-top: 40px;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  background-image: url(../../images/bg-search.jpg);
+  background-size: cover;
+  height: auto;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+
+  .search-bar-container {
+    padding: 170px 0;
+    .search-input {
+      &:focus {
+        outline: none;
+      }
+      background-image: url(../images/icons/search2.svg);
+      background-repeat: no-repeat;
+      background-position: 95% 50%;
+      background-size: 40px;
+      border-radius: 40px;
+      padding: 10px 20px;
+      color: $primary-color;
+      border: 0;
+      font-size: 30px;
+      &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+          color:    $primary-color;
+      }
+      &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+         color:    $primary-color;
+         opacity:  1;
+      }
+      &::-moz-placeholder { /* Mozilla Firefox 19+ */
+         color:    $primary-color;
+         opacity:  1;
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+         color:    $primary-color;
+      }
+      &::-ms-input-placeholder { /* Microsoft Edge */
+         color:    $primary-color;
+      }
+    }
+  }
+}
