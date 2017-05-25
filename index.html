@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
     <link href="https://file.myfontastic.com/BC9ZdCs7m7UKHwVGdEkYZU/icons.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/min/main.min.css">
   </head>
@@ -33,7 +34,7 @@
         </div>
 
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav nav-itens">
+          <ul class="nav nav-itens all-caps">
             <li class="active"><a href="#">Início</a></li>
             <li><a href="#">Descubra</a></li>
             <li><a href="#">Promoções</a></li>
@@ -47,34 +48,79 @@
       <div class="search-bar-container">
         <input class="search-input" type="text" placeholder="buscar...">
       </div>
-      <button id="find-me-btn"><img src="./images/icons/marker-white.png" width="30" alt="marker"><span style="margin-left: 4px;">encontre-me</span></button>
     </section>
 
     <section class="places">
       <div class="container">
-        <div class="row images-container">
-          <div class="col-md-4">
-            <img src="./images/fiji.jpg" class="img-responsive img-circle" alt="fiji image">
-          </div>
+        <div id="places-with-col" class="row images-container">
+            <div class="col-md-4 col-xs-4">
+              <img src="./images/fiji2.png" class="img-responsive img-places img-circle" alt="fiji image">
+              <div class="img-places-content">Fiji</div>
+            </div>
 
-          <div class="col-md-4">
-            <img src="./images/paris.jpg" class="img-responsive img-circle" alt="fiji image">
-          </div>
-          <div class="col-md-4">
-            <img src="./images/fiji.jpg" class="img-responsive img-circle" alt="fiji image">
+            <div class="col-md-4 col-xs-4">
+              <img src="./images/paris3.png" class="img-responsive img-places img-circle" alt="fiji image">
+              <div class="img-places-content">Paris</div>
+            </div>
+            <div class="col-md-4 col-xs-4">
+              <img src="./images/fiji2.png" class="img-responsive img-places img-circle" alt="fiji image">
+              <div class="img-places-content">Chile</div>
+            </div>
+        </div>
+
+        <div id="places-with-swiper" class="row">
+          <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide col-md-4">
+                    <img src="./images/fiji2.png" class="img-responsive img-places img-circle" alt="fiji image">
+                    <div class="img-places-content">Fiji</div>
+                  </div>
+                  <div class="swiper-slide col-md-4">
+                    <img src="./images/paris3.png" class="img-responsive img-places img-circle" alt="fiji image">
+                    <div class="img-places-content">Paris</div>
+                  </div>
+                  <div class="swiper-slide col-md-4">
+                    <img src="./images/fiji2.png" class="img-responsive img-places img-circle" alt="fiji image">
+                    <div class="img-places-content">Chile</div>
+                  </div>
+
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
           </div>
         </div>
+
+
+        </div>
+
       </div>
     </section>
 
     <section id="map"></section>
+
+    <footer class="footer">
+      <div class="container text-center">
+        <ul class="nav all-caps">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Descubra</a></li>
+          <li><a href="#">Promoções</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX4xYzaIAu5BDIc8eerc4qUz00XzOQZ_c&callback=initMap"
-    async defer>
-  </script>
   <script type="text/javascript" src="places.json"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type="text/javascript" src="js/min/main.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+  <script type="text/javascript" src="js/min/main.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX4xYzaIAu5BDIc8eerc4qUz00XzOQZ_c&callback=initMap" async defer></script>
 </html>

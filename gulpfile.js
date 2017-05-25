@@ -41,7 +41,7 @@ gulp.task('watch', () => {
   gulp.watch('js/*.js', ['uglifyjs']);
   gulp.watch('css/*.css', ['uglifycss']);
   gulp.watch('sass/**/*.scss', ['sass-compiler'])
-  gulp.watch('**/*.html').on('change', browserSync.reload);;
+  gulp.watch('**/*.html').on('change', browserSync.reload);
 });
 
 // Minify images
@@ -56,7 +56,7 @@ gulp.task('images', () => {
 gulp.task('sass-compiler', () => {
   gulp.src('sass/**/*.scss')
   .pipe(sass().on('error', sass.logError))
-  .pipe(postcss([ autoprefixer() ]))﻿
+  .pipe(postcss([ autoprefixer({ browsers: ["> 0%"] }) ]))﻿
   .pipe(gulp.dest('./css'))
   .pipe(browserSync.stream());
 });
