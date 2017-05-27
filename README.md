@@ -16,3 +16,4 @@ gulp
 - Os marcadores do google maps só funcionam rodando em localhost pois não dá pra ler arquivo json com o protocolo 'file://'.
 - A parte das imagens com os lugares acredito que eu não tenha feito da maneira mais eficiente, mas eu tentei outras formas de fazer e não consegui.
 - Independente do resultado, agradeço pela oportunidade. Consegui aprender pra caramba com esse projetinho :D
+- Esse projeto foi feito usando Ubuntu 16.04, então possa ser que algum problema ocorra devido a isso.
