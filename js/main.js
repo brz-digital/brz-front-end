@@ -18,6 +18,7 @@ function initMap() {
   // criei o mapa na div map
   let map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
+    scrollwheel: false,
     center: brasilia
   });
 
