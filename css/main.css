@@ -6,6 +6,8 @@
   border: 0; }
   .navbar-custom .navbar-brand {
     height: auto; }
+  .navbar-custom .nav > li > a {
+    padding: 10px 8px; }
   .navbar-custom .nav-itens {
     margin-top: 12px; }
   .navbar-custom .navbar-toggle {
@@ -72,11 +74,11 @@
         /* Microsoft Edge */
         color: #E1396C; }
 
-.swiper-container {
+.places .swiper-container {
   width: 100%;
   height: 100%;
   margin: 20px auto; }
-  .swiper-container .swiper-slide {
+  .places .swiper-container .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -97,13 +99,22 @@
     -moz-box-align: center;
          align-items: center; }
 
-#places-with-col .img-places {
+.places .red-circle {
+  opacity: 0.5;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #E1396C; }
+
+.places #places-with-col .img-places {
   width: 80%; }
 
-.img-places-content {
+.places .top {
+  top: 38%; }
+
+.places .img-places-content {
   position: absolute;
   left: 0;
-  top: 40%;
   width: 100%;
   text-align: center;
   color: #fff;
@@ -111,13 +122,13 @@
   letter-spacing: 2.5px;
   font-size: 40px; }
 
-.img-places {
+.places .img-places {
   max-width: 300px;
   width: 60%;
   margin: auto;
   opacity: 0.6; }
 
-.images-container {
+.places .images-container {
   margin: 50px 0 50px 0; }
 
 #map {
@@ -157,22 +168,47 @@ html, body {
       -o-background-size: 30px;
          background-size: 30px; }
   #places-with-col {
-    display: none; } }
+    display: none; }
+  .places .red-circle {
+    padding: 43px 17px; }
+  .navbar-custom .nav > li.responsive {
+    display: block;
+    text-align: center; } }
+
+@media screen and (min-width: 400px) {
+  .places .red-circle {
+    padding: 70px 40px; } }
 
 @media screen and (min-width: 480px) {
   .showcase .search-bar-container .search-input {
     font-size: 25px;
     -moz-background-size: 40px;
       -o-background-size: 40px;
-         background-size: 40px; } }
+         background-size: 40px; }
+  .places .red-circle {
+    padding: 100px 70px; } }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .showcase .search-bar-container .search-input {
     font-size: 30px;
     -moz-background-size: 40px;
       -o-background-size: 40px;
          background-size: 40px; }
+  .menu-collapse {
+    display: none !important; }
+  .navbar-custom .nav > li.responsive {
+    display: inline-block; } }
+
+@media screen and (min-width: 992px) {
   #places-with-col {
     display: block; }
   #places-with-swiper {
-    display: none; } }
+    display: none; }
+  .places .red-circle {
+    padding: 80px 50px; } }
+
+@media screen and (min-width: 1200px) {
+  .places .top {
+    top: 40%; }
+  .places .red-circle {
+    padding: 100px 70px; } }
