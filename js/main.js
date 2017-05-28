@@ -22,22 +22,22 @@ function initMap() {
     center: brasilia
   });
 
-  $.getJSON('places.json', (data) => {
-    let allPlaces = [];
-    $.each(data, function(key, val) {
-      // adiciono todas places que estão no places.json no array allPlaces
-      allPlaces.push(val.place[0]);
-    })
+  /* função responsável por criar todos os markers do arquivo places.json
+  dei uma refatorada no código e fiz o request usando promises */
+  fetch('places.json').then(response => response.json()).then(allPlaces => (
+    allPlaces.forEach(place => {
+      // variáveis de lat e lng obtidas no places.json, cada iteração terá o lat e lng correspondente
+      const lat = place.coordinates[0].lat;
+      const lng = place.coordinates[0].lng;
 
-    // faço uma iteração no array e para cada elemento eu crio um novo Marker com as lat e lng obtidos
-    allPlaces.forEach((element) => {
+      // cria um Marker para cada iteração no array com as lat e lng obtidos.
       new google.maps.Marker({
-        position: {lat: element.lat, lng: element.lng},
+        position: {lat: lat, lng: lng},
         map: map,
         icon: '../../images/icons/marker-pink.png'
       });
-    });
-  });
+    })
+  ));
 
   /* função para configurar o botão de 'encontre-me', como eu não sabia como criar um elemento "acima" do Google Maps
   eu tive que usar esse código que eu encontrei na documentação do Google Maps. */
