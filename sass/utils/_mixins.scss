@@ -9,16 +9,24 @@
   }
 }
 
+
 @mixin no-outline {
   &:hover, &:focus, &:active {
     outline: none;
   }
 }
 
+
 @mixin set-circle($padding) {
-  .places {
-    .red-circle {
-      padding: $padding;
-    }
+  .pink-big-circle {
+    padding: $padding;
   }
+}
+
+
+@mixin placeholder-color($color) {
+  &::-webkit-input-placeholder { color: $color; }
+  &:-moz-placeholder { color: $color; }
+  &::-moz-placeholder { color: $color; }
+  &:-ms-input-placeholder { color: $color; }
 }

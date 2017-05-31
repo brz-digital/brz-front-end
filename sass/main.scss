@@ -1,9 +1,20 @@
+// Utils
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/classes";
+@import "./utils/mobile";
+@import "./utils/swiper";
+
+// Components
+@import "./components/search-bar";
+@import "./components/img-round";
+
+// Sections
 @import "./sections/navbar";
 @import "./sections/showcase";
 @import "./sections/places";
 @import "./sections/map";
 @import "./sections/footer";
-@import "./utils/mixins";
-@import "./utils/general";
-@import "./utils/mobile";
-@import "./utils/variables";
+
+// Base file
+@import "./base";

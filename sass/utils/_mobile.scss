@@ -4,13 +4,17 @@
   }
 }
 
+
+
+
+
 @media screen and (min-width: 300px) {
   @include set-search-bar-size(20px, 30px);
+
   #places-with-col {
     display: none;
   }
-
-  @include set-circle(43px 17px);
+  @include set-circle(70px 40px);
 
   .navbar-custom .nav>li.responsive {
     display: block;
@@ -18,15 +22,22 @@
   }
 }
 
+
+
+
+
 @media screen and (min-width: 400px) {
   @include set-circle(70px 40px);
 }
 
+
+
+
 @media screen and (min-width: 480px) {
   @include set-search-bar-size(25px, 40px);
-
   @include set-circle(100px 70px);
 }
+
 
 @media screen and (min-width: 768px) {
   @include set-search-bar-size(30px, 40px);
@@ -40,6 +51,7 @@
   }
 }
 
+
 @media screen and (min-width: 992px) {
   #places-with-col {
     display: block;
@@ -48,12 +60,16 @@
     display: none;
   }
 
+  .places .top {
+    top: 38%;
+  }
+
   @include set-circle(80px 50px);
 }
 
 @media screen and (min-width: 1200px) {
+  @include set-circle(100px 70px);
   .places .top {
     top: 40%;
   }
-  @include set-circle(100px 70px);
 }

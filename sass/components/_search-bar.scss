@@ -1,0 +1,14 @@
+.search-bar-container {
+  padding: 170px 0;
+  .search-input {
+    @include no-outline;
+    background-image: url('../../images/icons/search-pink.svg');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    border-radius: 40px;
+    padding: 10px 20px;
+    color: $primary-color;
+    border: 0;
+    @include placeholder-color($primary-color);
+  }
+}
