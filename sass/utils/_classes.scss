@@ -1,0 +1,20 @@
+.all-caps {
+  text-transform: uppercase;
+}
+
+
+.opacity {
+  opacity: 0.5;
+}
+
+
+a,
+button {
+    outline: none !important;
+    transition: all .4s ease;
+    &:hover,
+    &:visited,
+    &:focus {
+        text-decoration: none;
+    }
+}

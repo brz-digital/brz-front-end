@@ -1,0 +1,32 @@
+@mixin set-search-bar-size($font-size, $icon-size) {
+  .showcase {
+    .search-bar-container {
+      .search-input {
+        font-size: $font-size;
+        background-size: $icon-size;
+      }
+    }
+  }
+}
+
+
+@mixin no-outline {
+  &:hover, &:focus, &:active {
+    outline: none;
+  }
+}
+
+
+@mixin set-circle($padding) {
+  .pink-big-circle {
+    padding: $padding;
+  }
+}
+
+
+@mixin placeholder-color($color) {
+  &::-webkit-input-placeholder { color: $color; }
+  &:-moz-placeholder { color: $color; }
+  &::-moz-placeholder { color: $color; }
+  &:-ms-input-placeholder { color: $color; }
+}
