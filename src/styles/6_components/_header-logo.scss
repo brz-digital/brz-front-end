@@ -1,0 +1,23 @@
+.header-logo {
+  margin-left: 0px;
+  // margin-right: auto;
+
+  .logo {
+    margin-top: -8px;
+    width: 140px;
+    opacity: 1;
+    fill: $secondary;
+  }
+
+}
+
+// MEDIA QUERIES
+@include mobile() {
+  .header-logo {
+
+    .logo {
+      width: 100px;
+    }
+
+  }
+}

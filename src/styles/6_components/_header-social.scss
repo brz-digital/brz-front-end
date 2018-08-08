@@ -1,0 +1,28 @@
+.header-social {
+  @include flex();
+  margin-right: 0;
+  margin-left: auto;
+
+  > .item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  > .item > .link:hover > .icon {
+    color: $secondary;
+  }
+
+  > .item > .link > .icon {
+    color: $white;
+    font-size: $size-4;
+  }
+}
+
+// MEDIA QUERIES
+@include largephone() {
+  .header-social {
+
+    > .item > .link > .icon {
+      font-size: $size-3;
+    }
+  }
+}

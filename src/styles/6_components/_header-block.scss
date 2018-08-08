@@ -1,0 +1,9 @@
+.header-block {
+  z-index: 1500;
+  position: relative;
+  @include flex();
+  width: 100%;
+  background-color: $primary;
+  height: 60px;
+  @include container-custom();
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Front-end Test BRZ",
+  "description": "HTML5+Bulma, Gulp and ES6 modules.",
+  "main": "src/index.html",
+  "keywords": [
+    "html5",
+    "bulma",
+    "boilerplate",
+    "gulp",
+    "es2015",
+    "es6",
+    "bower",
+    "responsive",
+    "sass",
+    "jquery"
+  ],
+  "license": "MIT",
+  "moduleType": "globals",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bulma": "latest",
+    "swiper": "^3.4.2"
+  }
+}

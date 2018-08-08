@@ -1,0 +1,80 @@
+// SLIDE INTRO
+
+// Custom slide properties
+.slide-container-intro {
+  @extend .swiper-container;
+  width: 100%;
+  height: 100%;
+
+  .slide-intro {
+    @extend .swiper-slide;
+    @extend .bg-cover;
+    @include flex($flex-direction: column);
+    background-color: $gray;
+  }
+
+  //// Custom pagination bullets
+  .slide-pagination-intro {
+    @extend .swiper-pagination;
+    bottom: 40px;
+  }
+
+  .slide-pagination-bullet-intro {
+    @extend .swiper-pagination-bullet;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    font-size: $size-7;
+    background-color: $lightgray;
+    margin-right: 20px;
+  }
+
+  .slide-pagination-bullet-intro:last-child {
+    margin-right: 0;
+  }
+
+  .slide-pagination-bullet-intro-active {
+    @extend .swiper-pagination-bullet-active;
+    opacity: 1;
+    background-color: $black;
+  }
+
+}
+
+///////////////////////////////////// MEDIA QUERIES
+@include mobile() {
+
+  .slide-container-intro {
+
+    .slide-pagination-intro {
+      bottom: rem(120);
+    }
+
+  }
+
+}
+
+@include largephone-only() {
+
+  .slide-container-intro {
+    height: rem(560);
+
+    .slide-pagination-intro {
+      bottom: rem(80);
+    }
+
+  }
+
+}
+
+@include tablet-only() {
+
+  .slide-container-intro {
+
+    .slide-pagination-intro {
+      bottom: rem(60);
+    }
+
+  }
+
+}

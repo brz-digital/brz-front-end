@@ -1,0 +1,63 @@
+.header-toggle {
+  @extend .is-hidden-tablet;
+  margin-left: 15px;
+
+  > .menu-toggle {
+    width: 30px;
+    cursor: pointer;
+  }
+
+  > .menu-toggle  > .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 9px 0px;
+    background: $white;
+    border-radius: 40px;
+    transition: all 0.3s;
+  }
+
+  > .menu-toggle  > .bar:before,
+  > .menu-toggle > .bar:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background: $white;
+    top: -9px;
+    transition: all 0.3s;
+  }
+
+  > .menu-toggle  > .bar:after {
+    top: 9px;
+  }
+
+}
+
+/////////////////////////////////////// MEDIA QUERY
+@include largephone() {
+
+  //// ANIMATIONS
+  // Toggle Hamburguer
+  .header-toggle {
+
+    > .menu-toggle.-open > .bar {
+      background: transparent;
+      transition: all 0.3s;
+    }
+
+    > .menu-toggle.-open > .bar:before {
+      transform: rotate(45deg) translate(6px, 7px);
+      transition: transform 0.5s;
+    }
+
+    > .menu-toggle.-open > .bar:after {
+      transform: rotate(-45deg) translate(6px, -7px);
+      transition: transform 0.5s;
+    }
+
+  }
+
+}
