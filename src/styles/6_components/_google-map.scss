@@ -1,6 +1,7 @@
 // GOOGLE MAP
 
 .google-map {
+  @include flex();
   height: 100%;
   position: relative;
 
@@ -16,20 +17,24 @@
     text-transform: lowercase;
     right: 80px;
     top: 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
     border-radius: 30px;
-    padding: 2px 25px 0;
+    padding: 12px 25px;
     font-size: $size-6;
     color: $white;
     background-color: $primary;
   }
 
-  > .btnmap:focus, .btnmap:active {
+  > .btnmap:hover, .btnmap:focus, .btnmap:active {
     background-color: darken($primary, 10%);
   }
 
   > .btnmap > .icon {
     margin-right: 15px;
-    font-size: $size-3;
+    fill: $white;
+    width: 40px;
   }
 
 }
@@ -40,14 +45,14 @@
   .google-map {
 
     > .btnmap {
-      right: 50px;
-      top: 60px;
-      padding: 5px 15px;
+      right: 30px;
+      top: 50px;
+      padding: 8px 15px;
     }
 
     > .btnmap > .icon {
       margin-right: 5px;
-      font-size: $size-4;
+      width: 25px;
     }
 
   }

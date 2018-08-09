@@ -1,9 +1,11 @@
 .header-box {
   z-index: 1500;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   @include flex();
-  width: 100%;
-  background-color: $primary;
-  height: 60px;
+  background: linear-gradient($primary, #c50a2a);
+  height: 80px;
   @include container-custom();
 }

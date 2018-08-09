@@ -5,7 +5,7 @@
   @extend .swiper-container;
   width: rem(1088);
   padding: 40px;
-  border-radius: rem(500);
+  border-radius: 500px;
 
   .slide-countries {
     @extend .swiper-slide;
@@ -20,10 +20,6 @@
   .slide-countries.-slide2 {
     background-image: url('../../images/paris.jpg');
     background-position: left !important;
-  }
-
-  .slide-countries:hover {
-    // padding: rem(20);
   }
 
   .slide-countries > .country {
@@ -48,6 +44,11 @@
     background-color: $primary;
     border-radius: 50%;
     color: $third;
+  }
+
+  .slide-countries:first-of-type > .country > .star > .icon {
+    fill: $third;
+    width: 30px;
   }
 
   .slide-countries .country > .title {
@@ -81,17 +82,14 @@
   .slide-next-countries {
     transition: all .5s;
     background: none;
-    color: $primary;
-    text-shadow: 1px 1px 3px $gray;
-    width: auto;
-    height: auto;
-    font-size: $size-1;
-    top: 42%;
+    fill: $primary;
+    width: 45px;
+    height: 45px;
   }
 
   .slide-prev-countries {
     @extend .swiper-button-prev;
-    left: -13px;
+    left: -5px;
   }
 
   .slide-prev-countries:hover {
@@ -105,7 +103,7 @@
 
   .slide-next-countries {
     @extend .swiper-button-next;
-    right: -13px;
+    right: -5px;
   }
 
   .slide-next-countries:hover {
@@ -122,34 +120,6 @@
     opacity: 0.2;
   }
 
-  // // Custom pagination bullets
-  // .slide-pagination-countries {
-  //   @extend .swiper-pagination;
-  // }
-
-  // .slide-pagination-bullet-countries {
-  //   @extend .swiper-pagination-bullet;
-  //   width: rem(15);
-  //   height: rem(15);
-  //   opacity: 1;
-  //   background: transparentize($secondary, 0.75);
-  //   margin-right: 10px;
-  //   display: none;
-  // }
-
-  // .slide-pagination-bullet-countries:last-of-type {
-  //   margin-right: 0;
-  // }
-
-  // .slide-pagination-bullet-countries-active {
-  //   @extend .swiper-pagination-bullet-active;
-  //   color: $black;
-  //   background: $black;
-  //   width: rem(15);
-  //   height: rem(15);
-  //   display: none;
-  // }
-
 }
 //////////////////////////////////  MEDIA QUERIES
 @include tablet-only() {
@@ -162,14 +132,6 @@
       height: 308px;
       width: 308px;
     }
-
-    // .slide-prev-countries {
-    //   // left: -16px;
-    // }
-    // .slide-next-countries {
-    //   // right: -16px;
-    // }
-
   }
 
 }
@@ -178,18 +140,16 @@
 
   .slide-container-countries {
     width: rem(450);
-    // padding: 20px 50px;
 
     .slide-countries {
       height: rem(350);
       width: rem(350);
     }
 
-    .slide-prev-countries {
-      left: -5px;
-    }
+    .slide-prev-countries,
     .slide-next-countries {
-      right: -5px;
+      width: 40px;
+      height: 40px;
     }
 
   }
@@ -200,19 +160,32 @@
 
   .slide-container-countries {
     width: rem(360);
-    // padding: 20px 0;
 
     .slide-countries {
       height: rem(270);
-      // width: rem(240);
-      // padding: rem(40);
     }
 
-    // .slide-prev-countries, .slide-next-countries {
-    //   display: none;
-    //   visibility: hidden;
-    // }
+    .slide-prev-countries,
+    .slide-next-countries {
+      width: 30px;
+      height: 30px;
+    }
 
+    .slide-prev-countries {
+      left: 0;
+    }
+    .slide-next-countries {
+      right: 0;
+    }
+
+    .slide-countries:first-of-type > .country > .star {
+      width: 35px;
+      height: 35px;
+    }
+
+    .slide-countries:first-of-type > .country > .star > .icon {
+      width: 25px;
+    }
   }
 
 }

@@ -3,7 +3,8 @@
   margin-left: 15px;
 
   > .menu-toggle {
-    width: 30px;
+    margin-top: -5px;
+    width: 35px;
     cursor: pointer;
   }
 
@@ -11,8 +12,8 @@
     position: relative;
     display: block;
     width: 100%;
-    height: 3px;
-    margin: 9px 0px;
+    height: 5px;
+    margin: 12px 0px;
     background: $white;
     border-radius: 40px;
     transition: all 0.3s;
@@ -23,15 +24,15 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 3px;
-    border-radius: 10px;
+    height: 5px;
+    border-radius: 40px;
     background: $white;
-    top: -9px;
+    top: -12px;
     transition: all 0.3s;
   }
 
   > .menu-toggle  > .bar:after {
-    top: 9px;
+    top: 12px;
   }
 
 }
@@ -49,12 +50,12 @@
     }
 
     > .menu-toggle.-open > .bar:before {
-      transform: rotate(45deg) translate(6px, 7px);
+      transform: translateY(12px) rotate(45deg);
       transition: transform 0.5s;
     }
 
     > .menu-toggle.-open > .bar:after {
-      transform: rotate(-45deg) translate(6px, -7px);
+      transform: translateY(-12px) rotate(-45deg);
       transition: transform 0.5s;
     }
 

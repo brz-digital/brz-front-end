@@ -8,8 +8,9 @@
   }
 
   > .item > .link > .icon {
-    color: $white;
-    font-size: $size-4;
+    width: 26px;
+    height: 26px;
+    fill: $white;
   }
 }
 
@@ -18,7 +19,8 @@
   .header-social {
 
     > .item > .link > .icon {
-      font-size: $size-3;
+      width: 32px;
+      height: 32px;
     }
   }
 }

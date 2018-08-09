@@ -3,10 +3,7 @@
   // margin-right: auto;
 
   .logo {
-    margin-top: -8px;
     width: 140px;
-    opacity: 1;
-    fill: $secondary;
   }
 
 }
@@ -15,8 +12,9 @@
 @include mobile() {
   .header-logo {
 
-    .logo {
-      width: 100px;
+    .logo .text {
+      display: none;
+      visibility: hidden;
     }
 
   }

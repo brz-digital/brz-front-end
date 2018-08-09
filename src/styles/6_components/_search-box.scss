@@ -5,14 +5,14 @@
   @include flex();
 
   > .input {
+    line-height: 60px;
     font-family: $nexa;
     font-weight: bold;
-    padding: 0 30px;
+    padding: 0 55px 0 30px;
     letter-spacing: 1px;
     @include placeholder-color($primary);
     color: $primary;
     width: 320px;
-    height: 60px;
     border-radius: 30px;
     outline: none;
     border: none;
@@ -30,12 +30,12 @@
 
   > .submit > .icon {
     cursor: pointer;
-    color: $primary;
-    font-size: $size-3;
+    width: 26px;
+    fill: $primary;
   }
 
   > .submit > .icon:hover  {
-    color: darken($primary, 10%);
+    fill: darken($primary, 10%);
   }
 }
 

@@ -10,7 +10,7 @@ class SlideCountries {
     const SlideCountries = new Swiper('.slide-container-countries', {
       slidesPerView: 3,
       spaceBetween: 45,
-      // autoplay: 6000,
+      autoplay: 6000,
       speed: 800,
       // autoplayDisableOnInteraction: false,
       loop: false,
