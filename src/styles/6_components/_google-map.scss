@@ -10,28 +10,26 @@
   }
 
   > .btnmap {
+    font-family: $nexaBold;
     @include flex();
     position: absolute;
-    text-transform: uppercase;
-    left: 200px;
-    bottom: 100px;
-    border-radius: rem(30);
-    padding: rem(10 20);
-    font-weight: bold;
+    text-transform: lowercase;
+    right: 80px;
+    top: 60px;
+    border-radius: 30px;
+    padding: 2px 25px 0;
+    font-size: $size-6;
     color: $white;
-    background-color: $secondary;
+    background-color: $primary;
   }
 
   > .btnmap:focus, .btnmap:active {
-    background-color: darken($secondary, 10%);
+    background-color: darken($primary, 10%);
   }
 
-  > .btnmap > .icon, > .btnmap > .text {
-    font-size: $size-6;
-  }
-
-  > .btnmap > .text {
-    margin-left: rem(10);
+  > .btnmap > .icon {
+    margin-right: 15px;
+    font-size: $size-3;
   }
 
 }
@@ -42,17 +40,14 @@
   .google-map {
 
     > .btnmap {
-      left: 30px;
-      bottom: 80px;
-      padding: rem(8 20);
+      right: 50px;
+      top: 60px;
+      padding: 5px 15px;
     }
 
-    > .btnmap > .icon, > .btnmap > .text {
-      font-size: $size-6;
-    }
-
-    > .btnmap > .text {
-      margin-left: rem(10);
+    > .btnmap > .icon {
+      margin-right: 5px;
+      font-size: $size-4;
     }
 
   }

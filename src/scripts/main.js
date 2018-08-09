@@ -1,12 +1,12 @@
 import Common from './modules/common';
 import HeaderNavBarMenu from './modules/headerNavbarMenu';
-import SlideIntro from './modules/slideIntro';
+import SlideCountries from './modules/slideCountries';
 import Map from './modules/map';
 // import Mask from './modules/mask';x
 // import ScrollSpy from './modules/scrollSpy';
 // import MapGetPosition from './modules/mapGetPosition';
 
-const availableModules = { Common, HeaderNavBarMenu, SlideIntro, Map };
+const availableModules = { Common, HeaderNavBarMenu, SlideCountries, Map };
 
 window.modules = {};
 

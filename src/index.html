@@ -56,7 +56,7 @@
 
 <body data-module="Common">
 
-  <header id="header-block" class="header-block" data-module="HeaderNavBarMenu">
+  <header id="header-box" class="header-box" data-module="HeaderNavBarMenu">
 
     <div class="header-logo">
       <a href="./index.html">
@@ -128,7 +128,16 @@
 
   <main>
 
-    <section class="section-block -intro">
+    <section class="section-box -intro">
+      <form class="search-box" action="#">
+        <input class="input" type="text" placeholder="buscar...">
+        <button class="submit" type="submit">
+          <span class="icon icon-location-before"></span>
+        </button>
+      </form>
+    </section>
+
+    <!-- <section class="section-box -slide">
       <div class="swiper-container slide-container-intro" data-module="SlideIntro">
         <div class="swiper-wrapper">
           <div class="swiper-slide slide-intro">
@@ -148,26 +157,69 @@
       <div class="page-scroll -down">
         <button class="btn-roll -move" data-container="link" data-link="aboutus"><span class="icon icon-downarrow-before"></span></button>
       </div>
+    </section> -->
+
+    <section class="section-box -slide">
+
+      <div class="swiper-container slide-container-countries" data-module="SlideCountries">
+        <div class="swiper-wrapper slide-wrapper-countries">
+          <div class="swiper-slide slide-countries -slide1">
+            <div class="country">
+              <h4 class="title">Fiji</h4>
+              <div class="star">
+                <span class="icon icon-location-before"></span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide-countries -slide2">
+            <div class="country">
+              <h4 class="title">Paris</h4>
+            </div>
+          </div>
+          <div class="swiper-slide slide-countries -slide3">
+            <div class="country">
+              <h4 class="title">Chile</h4>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination slide-pagination-countries"></div> -->
+        <div class="swiper-button-prev slide-prev-countries icon-leftarrow-before"></div>
+        <div class="swiper-button-next slide-next-countries icon-rightarrow-before"></div>
+      </div>
+
     </section>
 
-    <section class="section-block -other">
-      <h1>SECTION</h1>
-    </section>
 
-    <section class="section-block -location">
+
+
+
+    <section class="section-box -location">
       <div class="google-map" data-module="Map">
         <div id="map" class="map"></div>
         <a class="btnmap" target="_blank" href="http://maps.apple.com/?q=-13.0647527,-55.9214055">
           <span class="icon icon-location-before"></span>
-          <span class="text">Como chegar</span>
+          encontre-me
         </a>
       </div>
     </section>
 
   </main>
 
-  <footer class="section-block -footer">
-    <h1>FOOTER</h1>
+  <footer class="section-box -footer">
+    <ul class="footer-list">
+      <li class="item">
+        <a href="#" class="link">Início</a>
+      </li>
+      <li class="item">
+        <a href="#" class="link">Descubra</a>
+      </li>
+      <li class="item">
+        <a href="#" class="link">Promoções</a>
+      </li>
+      <li class="item">
+        <a href="#" class="link">Contato</a>
+      </li>
+    </ul>
   </footer>
 
   <script src="./scripts/vendors.min.js"></script>

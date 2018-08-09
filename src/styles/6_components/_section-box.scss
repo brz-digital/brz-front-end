@@ -1,0 +1,49 @@
+// SECTION BLOCK
+
+.section-box {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: $white;
+
+  &.-intro {
+    height: 440px;
+    background-image: url('../../images/bg-search.jpg');
+    @extend .bg-cover;
+    @include flex();
+  }
+
+  &.-slide {
+    padding: 40px 0;
+    // height: 400px;
+  }
+
+  &.-location {
+    height: 400px;
+  }
+
+  &.-footer {
+    height: 120px;
+    @include flex();
+  }
+
+}
+
+// MEDIA QUERIES
+@include largephone() {
+
+  .section-box {
+
+    &.-intro {
+      height: 350px;
+      background-position: 70% !important;
+    }
+
+    &.-footer {
+      visibility: hidden;
+      display: none;
+    }
+  }
+
+}
