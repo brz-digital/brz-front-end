@@ -1,10 +1,7 @@
 import Common from './modules/common';
 import HeaderNavBarMenu from './modules/headerNavbarMenu';
 import SlideCountries from './modules/slideCountries';
-// import Map from './modules/map';
 import MapGetPosition from './modules/mapGetPosition';
-// import Mask from './modules/mask';x
-// import ScrollSpy from './modules/scrollSpy';
 
 const availableModules = { Common, HeaderNavBarMenu, SlideCountries, MapGetPosition };
 

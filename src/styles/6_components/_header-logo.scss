@@ -1,6 +1,5 @@
 .header-logo {
   margin-left: 0px;
-  // margin-right: auto;
 
   .logo {
     width: 140px;
@@ -11,6 +10,11 @@
 // MEDIA QUERIES
 @include mobile() {
   .header-logo {
+
+    .logo {
+      margin-top: 4px;
+      width: 180px;
+    }
 
     .logo .text {
       display: none;

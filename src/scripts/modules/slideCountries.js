@@ -1,7 +1,7 @@
 class SlideCountries {
 
   constructor() {
-    console.log('>>> SlideCountries ready!');
+    // console.log('>>> SlideCountries ready!');
     // Call methods
     this.init();
   }

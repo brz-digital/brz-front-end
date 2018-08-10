@@ -1,6 +1,6 @@
 class Common {
   constructor() {
-    console.log('>>> common.js ready!');
+    // console.log('>>> common.js ready!');
 
     // Call methods
     this.fixedI10();

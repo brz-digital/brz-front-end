@@ -1,11 +1,9 @@
 // CONTAINERS
 
-//  **************** FAZER ISSO DE OUTRA FORMA DEPOIS **************** //
-
-///////////////////////// Container Custom (Top&Bottom: Input | Right&Left: Variables)
+///////////////////////// Container Custom
 // Right&Left Variables
-$container-custom-xs-rightleft: 20;
-$container-custom-sm-rightleft: 30;
+$container-custom-xs-rightleft: 30;
+$container-custom-sm-rightleft: 40;
 $container-custom-md-rightleft: 60;
 $container-custom-rightleft: 100;
 
@@ -45,35 +43,6 @@ $container-custom-rightleft: 100;
     padding-right: rem($container-custom-rightleft);
     padding-bottom: $bottom + %;
     padding-left: rem($container-custom-rightleft);
-  }
-
-}
-
-///////////////////////// Container Section Fluid Custom (Top&Bottom: Input | Right&Left: 0)
-@mixin container-fluid-custom($top: 0, $bottom: 0) {
-
-  padding-right: 0;
-  padding-left: 0;
-
-  @include largephone(){
-    padding-top: ($top + 7) + %;
-    padding-bottom: ($bottom + 7) + %;
-  }
-
-  @include tablet-only() {
-    padding-top: ($top + 4) + %;
-    padding-bottom: ($bottom + 4) + %;
-  }
-
-  @include desktop-only() {
-    padding-top: $top + %;
-    padding-bottom: $bottom + %;
-
-  }
-
-  @include widescreen() {
-    padding-top: $top + %;
-    padding-bottom: $bottom + %;
   }
 
 }

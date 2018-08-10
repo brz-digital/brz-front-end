@@ -54,7 +54,7 @@
       overflow: visible;
       flex-direction: column;
       justify-content: center;
-      background: linear-gradient(#c50a2a, $primary);
+      background: linear-gradient($primary, #c50a2a);
     }
 
     > .list > .item:not(:last-child) {

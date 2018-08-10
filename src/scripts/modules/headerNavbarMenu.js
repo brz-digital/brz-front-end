@@ -1,7 +1,7 @@
 class HeaderNavBarMenu {
 
   constructor() {
-    console.log('>>> headerNavbarMenu.js ready!');
+    // console.log('>>> headerNavbarMenu.js ready!');
 
     // Call methods
     this.menu();
