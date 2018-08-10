@@ -1,0 +1,60 @@
+// GOOGLE MAP
+
+.google-map {
+  @include flex();
+  height: 100%;
+  position: relative;
+
+  > .map {
+    width: 100%;
+    height: 100%;
+  }
+
+  > .btnmap {
+    font-family: $nexaBold;
+    @include flex();
+    position: absolute;
+    text-transform: lowercase;
+    right: 80px;
+    top: 60px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 12px 25px;
+    font-size: $size-6;
+    color: $white;
+    background-color: $primary;
+  }
+
+  > .btnmap:hover, .btnmap:focus, .btnmap:active {
+    background-color: darken($primary, 10%);
+  }
+
+  > .btnmap > .icon {
+    margin-right: 15px;
+    fill: $white;
+    width: 40px;
+  }
+
+}
+
+/////////////////////////////////////// MEDIA QUERIES
+@include largephone() {
+
+  .google-map {
+
+    > .btnmap {
+      right: 30px;
+      top: 50px;
+      padding: 8px 15px;
+    }
+
+    > .btnmap > .icon {
+      margin-right: 5px;
+      width: 25px;
+    }
+
+  }
+
+}

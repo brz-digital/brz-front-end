@@ -1,0 +1,28 @@
+// TYPOGRAPHY
+
+// Font family
+$family-sans-serif: $nexa, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-monospace: monospace;
+$render-mode: optimizeLegibility;
+
+// Font size root in px
+$fontsize-base-large: 16px;
+$fontsize-base-medium: 15px;
+$fontsize-base-small: 14px;
+$fontsize-base-extrasmall: 13px;
+
+// Sizes px to rem
+$size-1: rem(48);
+$size-2: rem(40);
+$size-3: rem(32);
+$size-4: rem(24);
+$size-5: rem(20);
+$size-6: rem(16);
+$size-7: rem(14);
+
+// Font weight
+$weight-light: 300;
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;

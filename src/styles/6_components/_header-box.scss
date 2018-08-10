@@ -1,0 +1,11 @@
+.header-box {
+  z-index: 1500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  @include flex();
+  background: linear-gradient($primary, #c50a2a);
+  height: 80px;
+  @include container-custom();
+}

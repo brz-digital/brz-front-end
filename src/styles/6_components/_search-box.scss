@@ -1,0 +1,51 @@
+// SECTION BLOCK
+
+.search-box {
+  position: relative;
+  @include flex();
+
+  > .input {
+    line-height: 60px;
+    font-family: $nexa;
+    font-weight: bold;
+    padding: 0 55px 0 30px;
+    letter-spacing: 1px;
+    @include placeholder-color($primary);
+    color: $primary;
+    width: 320px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: $white;
+    font-size: $size-5;
+  }
+
+  > .submit {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 20px;
+  }
+
+  > .submit > .icon {
+    cursor: pointer;
+    width: 26px;
+    fill: $primary;
+  }
+
+  > .submit > .icon:hover  {
+    fill: darken($primary, 10%);
+  }
+}
+
+// MEDIA QUERIES
+@include mobile() {
+
+  .search-box {
+
+    > .input { width: 280px; }
+
+  }
+
+}
