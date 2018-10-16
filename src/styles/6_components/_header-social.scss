@@ -1,0 +1,30 @@
+.header-social {
+  @include flex();
+  margin-right: 0;
+  margin-left: auto;
+
+  > .item:not(:last-child) {
+    margin-right: rem(15);
+  }
+
+  > .item > .link > .icon {
+    width: 26px;
+    height: 26px;
+    fill: $white;
+  }
+}
+
+// MEDIA QUERIES
+@include largephone() {
+  .header-social {
+
+    > .item:last-child {
+      margin-right: rem(20);
+    }
+
+    > .item > .link > .icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

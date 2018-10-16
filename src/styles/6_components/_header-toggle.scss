@@ -1,0 +1,63 @@
+// HEADER MENU TOGGLE
+
+  .menu-toggle {
+    @extend .is-hidden-tablet;
+    z-index: 1800;
+    margin-top: -6px;
+    width: 38px;
+    cursor: pointer;
+
+
+  > .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin: 11px 0px;
+    background: $white;
+    border-radius: 40px;
+    transition: all 0.3s;
+  }
+
+  > .bar:before,
+  > .bar:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 40px;
+    background: $white;
+    top: -11px;
+    transition: all 0.3s;
+  }
+
+  > .bar:after {
+    top: 11px;
+  }
+
+}
+
+/////////////////////////////////////// MEDIA QUERY
+@include largephone() {
+
+  .menu-toggle.-open {
+
+
+    > .bar {
+      background: transparent;
+      transition: all 0.3s;
+    }
+
+    > .bar:before {
+      transform: rotate(44deg) translate(8px, 8px);
+      transition: transform 0.3s;
+    }
+
+    > .bar:after {
+      transform: rotate(-44deg) translate(8px, -7px);
+      transition: transform 0.3s;
+    }
+
+  }
+
+}

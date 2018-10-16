@@ -1,0 +1,20 @@
+.header-navbar {
+  z-index: 1500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  @include flex($justify-content: space-between);
+  background: linear-gradient($primary, #c50a2a);
+  height: rem(80);
+  @include container-padding();
+}
+
+
+////////////// MEDIA QUERIES
+@include mobile() {
+  .header-navbar {
+    height: rem(100);
+  }
+
+}

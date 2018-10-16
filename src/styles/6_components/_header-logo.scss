@@ -1,0 +1,25 @@
+.header-logo {
+  z-index: 1000;
+
+  .logo {
+    width: rem(140);
+  }
+
+}
+
+// MEDIA QUERIES
+@include mobile() {
+  .header-logo {
+
+    .logo {
+      margin-top: rem(4);
+      width: rem(180);
+    }
+
+    .logo .text {
+      display: none;
+      visibility: hidden;
+    }
+
+  }
+}

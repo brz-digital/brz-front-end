@@ -1,0 +1,48 @@
+// CONTAINERS
+
+///////////////////////// Container Custom
+// Right&Left Variables
+$container-custom-xs-rightleft: 30;
+$container-custom-sm-rightleft: 40;
+$container-custom-md-rightleft: 60;
+$container-custom-rightleft: 100;
+
+@mixin container-padding($top: 0, $bottom: 0) {
+
+  @include mobile(){
+    padding-top: ($top + 2) + %;
+    padding-right: rem($container-custom-xs-rightleft);
+    padding-bottom: ($bottom + 2) + %;
+    padding-left: rem($container-custom-xs-rightleft);
+  }
+
+  @include largephone-only(){
+    padding-top: ($top + 1) + %;
+    padding-right: rem($container-custom-sm-rightleft);
+    padding-bottom: ($bottom + 1) + %;
+    padding-left: rem($container-custom-sm-rightleft);
+  }
+
+  @include tablet-only() {
+    padding-top: ($top + 1) + %;
+    padding-right: rem($container-custom-sm-rightleft);
+    padding-bottom: ($bottom + 1) + %;
+    padding-left: rem($container-custom-sm-rightleft);
+  }
+
+  @include desktop-only() {
+    padding-top: $top + %;
+    padding-right: rem($container-custom-md-rightleft);
+    padding-bottom: $bottom + %;
+    padding-left: rem($container-custom-md-rightleft);
+
+  }
+
+  @include widescreen() {
+    padding-top: $top + %;
+    padding-right: rem($container-custom-rightleft);
+    padding-bottom: $bottom + %;
+    padding-left: rem($container-custom-rightleft);
+  }
+
+}

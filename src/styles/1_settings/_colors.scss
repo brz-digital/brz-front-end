@@ -1,0 +1,107 @@
+// Import Bulma's variables
+
+@import "../../bower_components/bulma/sass/utilities/initial-variables";
+@import "../../bower_components/bulma/sass/utilities/functions";
+
+// COLORS
+
+$white:        #ffffff;
+$lightgray:    #fdfdfd;
+$gray:         #797979;
+$lightblack:   #222222;
+$black:        #000000;
+
+// Project Colors
+$primary:      #f60278;
+$secondary:    #e6055d;
+$third:        #fffc00;
+
+// Status Colors
+$success:      #8bc34a;
+$danger:       #f44336;
+$warning:      #ffc107;
+$info:         #03a9f4;
+
+// Social Colors
+$facebook:     #39579b;
+$twitter:      #588dc9;
+$youtube:      #bb0000;
+$google:       #dd4b39;
+$whatsapp:     #4dc247;
+$instagram:    #ffffff;
+$linkedin:     #0079b8;
+
+// Bulma's Colors
+$black:        hsl(0, 0%, 4%);
+$black-bis:    hsl(0, 0%, 7%);
+$black-ter:    hsl(0, 0%, 14%);
+$grey-darker:  hsl(0, 0%, 21%);
+$grey-dark:    hsl(0, 0%, 29%);
+$grey:         hsl(0, 0%, 48%);
+$grey-light:   hsl(0, 0%, 71%);
+$grey-lighter: hsl(0, 0%, 86%);
+$white-ter:    hsl(0, 0%, 96%);
+$white-bis:    hsl(0, 0%, 98%);
+$white:        hsl(0, 0%, 100%);
+$orange:       hsl(14,  100%, 53%);
+$yellow:       hsl(48,  100%, 67%);
+$green:        hsl(141, 71%,  48%);
+$turquoise:    hsl(171, 100%, 41%);
+$cyan:         hsl(204, 86%,  53%);
+$blue:         hsl(217, 71%,  53%);
+$purple:       hsl(271, 100%, 71%);
+$red:          hsl(348, 100%, 61%);
+
+// General colors
+$background: $white-ter !default;
+$border: $grey-lighter !default;
+$border-hover: $grey-light !default;
+
+// Text colors
+$text: $grey-dark !default;
+$text-invert: findColorInvert($text) !default;
+$text-light: $grey !default;
+$text-strong: $grey-darker !default;
+
+// Code colors
+$code: $red !default;
+$code-background: $background !default;
+$pre: $text !default;
+$pre-background: $background !default;
+
+// Link colors
+$link: $blue !default;
+$link-invert: findColorInvert($blue) !default;
+$link-visited: $purple !default;
+$link-hover: $grey-darker !default;
+$link-hover-border: $grey-light !default;
+$link-focus: $grey-darker !default;
+$link-focus-border: $blue !default;
+$link-active: $grey-darker !default;
+$link-active-border: $grey-dark !default;
+
+// Button colors
+$button-color: $grey-darker !default;
+$button-background-color: $white !default;
+$button-border-color: $grey-lighter !default;
+$button-border-width: 0 !default;
+$button-padding-vertical: calc(0.375em - #{$button-border-width}) !default;
+$button-padding-horizontal: 0.75em !default;
+$button-hover-color: $link-hover !default;
+$button-hover-border-color: $link-hover-border !default;
+$button-focus-color: $link-focus !default;
+$button-focus-border-color: $link-focus-border !default;
+$button-focus-box-shadow-size: 0 0 0 0.125em !default;
+$button-focus-box-shadow-color: transparent !default;
+$button-active-color: $link-active !default;
+$button-active-border-color: $link-active-border !default;
+$button-text-color: $text !default;
+$button-text-hover-background-color: $background !default;
+$button-text-hover-color: $text-strong !default;
+$button-disabled-background-color: $white !default;
+$button-disabled-border-color: $grey-lighter !default;
+$button-disabled-shadow: none !default;
+$button-disabled-opacity: 0.5 !default;
+$button-static-color: $grey !default;
+$button-static-background-color: $white-ter !default;
+$button-static-border-color: $grey-lighter !default;

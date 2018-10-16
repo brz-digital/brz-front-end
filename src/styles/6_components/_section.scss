@@ -1,0 +1,47 @@
+// SECTION
+
+.section {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: $lightgray;
+
+  &.-search {
+    background-image: url('../../images/bg-search.jpg');
+    height: rem(440);
+    @extend .bg-cover;
+    @include flex();
+  }
+
+  &.-slide {
+    padding: rem(40 0);
+  }
+
+  &.-location {
+    height: rem(400);
+  }
+
+  &.-footer {
+    height: rem(120);
+    @include flex();
+  }
+
+}
+
+// MEDIA QUERIES
+@include largephone() {
+
+  .section {
+
+    &.-search {
+      background-position: 70% !important;
+    }
+
+    &.-footer {
+      visibility: hidden;
+      display: none;
+    }
+  }
+
+}

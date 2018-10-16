@@ -1,0 +1,34 @@
+// FONTS
+
+// Variables
+$fontsdir : '../../fonts/';
+$fontastic: 'test-brz';
+$nexa: 'NexaLight';
+$nexaBold: 'NexaBold';
+
+// Fontastic Icons
+@include font-face(
+  $fontastic,
+  "#{$fontsdir}/fontastic/#{$fontastic}",
+  normal,
+  normal,
+  eot woff ttf svg
+);
+
+// Nexa Light
+@include font-face(
+  $nexa,
+  "#{$fontsdir}/nexa/#{$nexa}",
+  normal,
+  normal,
+  otf
+);
+
+// Nexa Bold
+@include font-face(
+  $nexaBold,
+  "#{$fontsdir}/nexa/#{$nexaBold}",
+  bold,
+  normal,
+  otf
+);

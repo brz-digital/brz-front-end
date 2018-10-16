@@ -1,0 +1,36 @@
+// MEDIA QUERIES
+// Bulma's rest of utilities
+@import "../../bower_components/bulma/sass/utilities/derived-variables";
+@import "../../bower_components/bulma/sass/utilities/animations";
+@import "../../bower_components/bulma/sass/utilities/mixins";
+@import "../../bower_components/bulma/sass/utilities/controls";
+
+// Bulma's Responsiveness
+$gap: 64px;
+$largephone: 576px;
+$tablet: 769px;
+$desktop: 960px + (2 * $gap);
+$widescreen: 1152px + (2 * $gap);
+$fullhd: 1344px + (2 * $gap);
+
+$fullhd-enabled: true;
+$widescreen-enabled: true;
+
+// Mixins Overrides
+@mixin mobile(){
+  @media screen and (max-width: $largephone - 1px){
+    @content;
+  }
+}
+
+@mixin largephone(){
+  @media screen and (max-width: $tablet - 1px){
+    @content;
+  }
+}
+
+@mixin largephone-only(){
+  @media screen and (min-width: $largephone) and (max-width: $tablet - 1px){
+    @content;
+  }
+}
