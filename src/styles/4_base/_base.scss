@@ -1,0 +1,32 @@
+@-ms-viewport   { width: device-width; }
+@-o-viewport    { width: device-width; }
+@viewport       { width: device-width; }
+
+html {
+  font-size: $fontsize-base-large;
+}
+
+///////////////////////////////////// MEDIA QUERIES
+@include tablet-only() {
+
+  html {
+    font-size: $fontsize-base-medium;
+  }
+
+}
+
+@include largephone-only() {
+
+  html {
+    font-size: $fontsize-base-small;
+  }
+
+}
+
+@include mobile() {
+
+  html {
+    font-size: $fontsize-base-extrasmall;
+  }
+
+}

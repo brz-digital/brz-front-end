@@ -1,0 +1,81 @@
+.header-menu {
+  margin-left: rem(60);
+
+  > .list {
+    @include flex();
+  }
+
+  > .list > .item {
+    @include flex($align-items: flex-end);
+    height: rem(80);
+  }
+
+  > .list > .item:not(:last-child) {
+    margin-right: rem(25);
+  }
+
+  > .list > .item > .link {
+    color: $white;
+    font-size: $size-6;
+    text-transform: uppercase;
+  }
+
+
+  > .list > .item > .link:after {
+    display: block;
+    padding-top: rem(20);
+    content: '';
+    border-bottom: solid rem(6) $third;
+    transform: scaleX(0);
+    transition: transform 0.250s ease-in-out;
+  }
+
+  > .list > .item > .link:hover:after {
+    transform: scaleX(1);
+  }
+
+}
+
+/////////////////////////////////////// MEDIA QUERY
+@include largephone() {
+
+  .header-menu {
+    left: 0;
+    right: 0;
+    margin: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    height: 100vh;
+    position: absolute;
+    transition: opacity 0.8s, visibility 1s;
+
+    > .list {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: rem(140 0 40);
+      background: linear-gradient($primary, #c50a2a);
+      overflow-y: scroll;
+    }
+
+    > .list > .item:not(:last-child) {
+      margin: 0;
+      margin-bottom: rem(20);
+    }
+
+    > .list > .item > .link {
+      color: $white;
+      font-size: $size-3;
+    }
+
+    // Open Menu
+    &.-open {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.8s, visibility 0.5s;
+    }
+
+  }
+
+}

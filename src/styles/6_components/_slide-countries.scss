@@ -1,0 +1,191 @@
+// SLIDE SERVICES
+
+// Custom slide properties
+.slide-container-countries {
+  @extend .swiper-container;
+  width: rem(1088);
+  padding: 40px;
+  border-radius: 500px;
+
+  .slide-countries {
+    @extend .swiper-slide;
+    @extend .bg-cover;
+    background-color: $white;
+    border-radius: 50%;
+    height: 306px;
+    width: 306px;
+    background-image: url('../../images/fiji.jpg');
+  }
+
+  .slide-countries.-slide2 {
+    background-image: url('../../images/paris.jpg');
+    background-position: left !important;
+  }
+
+  .slide-countries > .country {
+    position: absolute;
+    @include flex();
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparentize($white, 0.70);
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .slide-countries:first-of-type > .country > .star {
+    @include flex();
+    position: absolute;
+    bottom: -16px;
+    width: 50px;
+    height: 50px;
+    background-color: $primary;
+    border-radius: 50%;
+    color: $third;
+  }
+
+  .slide-countries:first-of-type > .country > .star > .icon {
+    fill: $third;
+    width: 30px;
+  }
+
+  .slide-countries .country > .title {
+    font-family: $nexaBold;
+    text-shadow: 1px 1px 1px $gray;
+    font-size: $size-4;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    color: $white;
+  }
+
+  .slide-countries:nth-of-type(2) > .country > .title {
+    z-index: 1;
+  }
+
+  .slide-countries:nth-of-type(2) > .country > .title::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    margin: 25px;
+    background-color: transparentize($primary, 0.20);
+  }
+
+  // Custom Navigation Arrows
+  .slide-prev-countries,
+  .slide-next-countries {
+    transition: all .5s;
+    background: none;
+    fill: $primary;
+    width: 45px;
+    height: 45px;
+  }
+
+  .slide-prev-countries {
+    @extend .swiper-button-prev;
+    left: -5px;
+  }
+
+  .slide-prev-countries:hover {
+    opacity: 0.8;
+    transform: translateX(-2px);
+  }
+
+  .slide-prev-countries:active {
+    opacity: 0.2;
+  }
+
+  .slide-next-countries {
+    @extend .swiper-button-next;
+    right: -5px;
+  }
+
+  .slide-next-countries:hover {
+    opacity: 0.8;
+    transform: translateX(2px);
+  }
+
+  .slide-next-countries:active {
+    opacity: 0.2;
+  }
+
+  .slide-prev-countries.swiper-button-disabled,
+  .slide-next-countries.swiper-button-disabled {
+    opacity: 0.2;
+  }
+
+}
+//////////////////////////////////  MEDIA QUERIES
+@include tablet-only() {
+
+  .slide-container-countries {
+    width: rem(800);
+    padding: 40px;
+
+    .slide-countries {
+      height: 308px;
+      width: 308px;
+    }
+  }
+
+}
+
+@include largephone-only() {
+
+  .slide-container-countries {
+    width: rem(450);
+
+    .slide-countries {
+      height: rem(350);
+      width: rem(350);
+    }
+
+    .slide-prev-countries,
+    .slide-next-countries {
+      width: 40px;
+      height: 40px;
+    }
+
+  }
+
+}
+
+@include mobile(){
+
+  .slide-container-countries {
+    width: rem(370);
+
+    .slide-countries {
+      height: rem(270);
+    }
+
+    .slide-prev-countries,
+    .slide-next-countries {
+      width: 30px;
+      height: 30px;
+    }
+
+    .slide-prev-countries {
+      left: 0;
+    }
+    .slide-next-countries {
+      right: 0;
+    }
+
+    .slide-countries:first-of-type > .country > .star {
+      width: 35px;
+      height: 35px;
+    }
+
+    .slide-countries:first-of-type > .country > .star > .icon {
+      width: 25px;
+    }
+  }
+
+}

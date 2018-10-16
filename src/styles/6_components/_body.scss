@@ -1,0 +1,10 @@
+body {
+  padding-top: rem(80);
+}
+
+////////// MEIDA QUERIES
+@include mobile() {
+  body {
+    padding-top: rem(100);
+  }
+}

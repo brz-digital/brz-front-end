@@ -1,0 +1,19 @@
+.footer-menu {
+  @include flex();
+
+  > .item:not(:last-child) {
+    margin-right: rem(30);
+  }
+
+  > .item > .link {
+    font-size: $size-6;
+    font-weight: bold;
+    color: $gray;
+    text-transform: uppercase;
+  }
+
+  > .item > .link:hover {
+    color: $lightblack;
+  }
+
+}
